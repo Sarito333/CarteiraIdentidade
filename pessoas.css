@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+#identidades-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;        
+}
+
+.card {
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.card-header {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card.masculino .card-header {
+    background-color: #4CAF50;
+}
+
+.card.feminino .card-header {
+    background-color: #8A2BE2; 
+}
+
+.card-content {
+    display: flex;
+    padding: 15px;
+}
+
+.card-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.estatistica{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resul{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
